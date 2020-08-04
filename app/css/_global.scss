@@ -1,0 +1,31 @@
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  overflow: hidden;
+
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+.suptitle-left {
+  position: relative;
+  opacity: 0.5;
+  padding-left: 104px;
+  line-height: 32px;
+  letter-spacing: 7.33333px;
+  color: #fff;
+  font-size: 22px;
+  display: inline-block;
+  &::before {
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background-color: #fff;
+    content: '';
+    top: 50%;
+    left: 0;
+  }
+}
