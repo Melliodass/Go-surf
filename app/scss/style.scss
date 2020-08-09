@@ -3,8 +3,7 @@
 @import "fonts";
 @import "global";
 
-.header {
-}
+
 .header__slider {
   &-item {
     position: relative;
@@ -186,13 +185,151 @@
 
   }
 .surf {
-  padding-right: 80px;
+  background-image: url(../img/surf-bg.svg);
+  background-position:  right  160px;
+  background-repeat: no-repeat;
+  background-size: auto;
   padding-top: 85px;
+  padding-bottom: 120px;
   &__subtitle {
-    text-align: right;
     padding-top: 30px;
+    text-align: right;
   }
 }
+
+.surf-slider {
+  padding-top: 110px;
+  .slider-arrows {
+  opacity: 0.25;
+  margin-right: 10px;
+  }
+  .slick-slide:nth-child(4n+1) {
+    .surf-box {
+      margin-top: 32px;
+    }
+  }
+  .slick-slide:nth-child(4n+3) {
+    .surf-box {
+      margin-top: 89px;
+    }
+  }
+  .slick-current +.slick-slide {
+    .surf-box__inner-btn {
+      opacity: 1;;
+    } 
+    .surf-box__inner {
+      background: rgba(#1C2121, 0.3); 
+    }
+   }
+
+}
+
+.surf-box {
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__inner {
+    position: relative;
+    min-height: 750px;
+    background: rgba(#1C2121, 0.85) ;
+    transition: all 0.8s;
+    &:hover {
+      background: rgba(#1C2121, 0.3) ;
+      .surf-box__inner-btn {
+        opacity: 1;
+        transition: all 0.8s;
+      } 
+    }
+    }
+    
+  }
+  .surf-box__inner {
+    &-title {
+      width: 140px;
+      padding: 72px 0 0 40px;
+      line-height: 36px;
+      font-size: 40px;
+      font-weight: 800;
+    }
+    &-location {
+      position: absolute;
+      bottom: 90px;
+      left: 40px;
+      width: 0;
+      height: 0;
+      transform: rotate(-90deg);
+      line-height: 22px;
+      letter-spacing: 8px;
+      white-space: nowrap;
+      color: #FFFFFF;
+      font-size: 18px;
+      span {
+        opacity: 0.75;
+        font-weight: 100;
+      }
+     
+    }
+    &-btn {
+      position: absolute;
+      bottom: 0; 
+      left: 0;
+      left: 45px;
+      opacity: 0;
+    }
+  }
+  .slider-map {
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 635px;
+    background-image: url(../img/world-map-dots.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .slick-list {
+      min-height: 635px;
+    }
+  }
+  .slider-dotsmap {
+    position: relative;
+    display: inline-block;
+  }
+  .slider-dotsmap__circle {
+    min-width: 24px;
+    max-width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: $green;
+  }
+  .slider-dotsmap__content {
+    opacity: 0;
+  }
+  .slider-dotsmap--1 {
+    position: absolute;
+    top: 150px;
+    left: 34px;
+  }
+  .slider-dotsmap--2 {
+    position: absolute;
+  }
+  .slider-dotsmap--3 {
+    position: absolute;
+  }
+  .slider-dotsmap--4 {
+    position: absolute;
+  }
+  .slider-dotsmap--5 {
+    position: absolute;
+  }
+  .slider-dotsmap--6 {
+    position: absolute;
+  }
+  .slider-dotsmap--7 {
+    position: absolute;
+  }
+  .slider-dotsmap--8 {
+    position: absolute;
+  }
 
   
   

@@ -7,11 +7,11 @@ html {
   box-sizing: inherit;
 }
 body {
+  background-color: #171919;
+  text-transform: uppercase;
+  color: #fff;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
-  color: #fff;
-  text-transform: uppercase;
-  background-color: #171919;
 
 }
 a {
@@ -21,11 +21,12 @@ a {
 }
 ul,
 li {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 .headline-left {
+  display: inline-block;
   position: relative;
   opacity: 0.5;
   padding-left: 104px;
@@ -33,22 +34,21 @@ li {
   letter-spacing: 7.33333px;
   color: #fff;
   font-size: 22px;
-  display: inline-block;
   &::before {
     position: absolute;
+    top: 50%;
+    left: 0;
     width: 80px;
     height: 1px;
     background-color: #fff;
     content: '';
-    top: 50%;
-    left: 0;
   }
 }
 .title {
-  font-size: 80px;
-  line-height: 156px;
-  font-weight: 800;
   position: relative;
+  line-height: 156px;
+  font-size: 80px;
+  font-weight: 800;
 }
 h3 {
   display: inline-block;
@@ -58,28 +58,61 @@ h3 {
   padding-left: 280px;
    &::before {
     position: absolute;
-    content: '';
+    top: 30px;
+    right: 0;
     width: 80px;
     height: 1px;
     background: #4AF6CD;
-    right: 0;
-    top: 30px;
+    content: '';
   }
   span {
-    left: -15px;
-    top: 40%; 
+    top: 40%;
+    left: -15px; 
   }
 }
 .subtitle {
   display: inline-block;
+  padding-right: 85px;
   text-align: right;
   &__head {
+    padding-right: 10px;
     font-size: 40px;
     font-weight: 800;
-    padding-right: 10px;
     span {
       font-weight: 100;
     }
   }
-
+}
+.btn {
+  line-height: 45px;
+  font-size: 40px;
+  font-weight: 800;
+  span {
+    display: inline-block;
+    position: relative;
+    margin-left: 15px;
+    background-color: $green;
+    padding: 17px 57px 17px 20px;
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: -10px;
+      width: 20px;
+      height: 1px;
+      background-color: #fff;
+      transform: translateY(-50%);
+      content: "";
+    }
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      width: 24px;
+      height: 20px;
+      background-image: url(../img/arrow-right.svg);
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+      content: '';
+    }
+  }
 }
