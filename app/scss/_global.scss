@@ -25,6 +25,10 @@ li {
   padding: 0;
   list-style: none;
 }
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 .headline-left {
   display: inline-block;
   position: relative;

@@ -32,11 +32,4 @@ $('.slider-map').slick ({
 
 });
 
-$('.slider-dotsmap').slick ({
-  slidesToShow: 8,
-  slidesToScroll: 1,
-  arrows: false,
-  asNavFor: '.slider-map'
-
-});
 });
