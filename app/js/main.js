@@ -31,5 +31,11 @@ $('.slider-map').slick ({
   focusOnSelect: true,
 
 });
-
+$('.travel__slider').slick({
+  infinite: true,
+  fade: true,
+  prevArrow: '<img class="slider-arrows slider-arrows__left slick-prev" src="img/arrow-left.svg">',
+  nextArrow: '<img class="slider-arrows slider-arrows__right slick-next" src="img/arrow-right.svg">',
+  asNavFor: '.slider-dots'
+});
 });
