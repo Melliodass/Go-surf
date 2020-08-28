@@ -29,7 +29,8 @@ li {
   max-width: 1920px;
   margin: 0 auto;
 }
-.headline-left {
+.headline-left,
+ {
   display: inline-block;
   position: relative;
   opacity: 0.5;
@@ -42,6 +43,25 @@ li {
     position: absolute;
     top: 50%;
     left: 0;
+    width: 80px;
+    height: 1px;
+    background-color: #fff;
+    content: '';
+  }
+}
+.headline-right {
+  display: inline-block;
+  position: relative;
+  opacity: 0.5;
+  padding-right: 104px;
+  line-height: 32px;
+  letter-spacing: 7.33333px;
+  color: #fff;
+  font-size: 22px;
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 0;
     width: 80px;
     height: 1px;
     background-color: #fff;
@@ -74,6 +94,11 @@ h3 {
     left: -15px; 
   }
 }
+.surf,
+.travel {
+  padding-top: 85px;
+  padding-bottom: 120px;
+}
 .subtitle {
   display: inline-block;
   padding-right: 85px;
@@ -86,6 +111,16 @@ h3 {
       font-weight: 100;
     }
   }
+}
+.descr {
+  display: inline-block;
+  &__head {
+    font-size: 40px;
+    font-weight: 800;
+    span {
+      font-weight: 100;
+    }
+}
 }
 .btn {
   line-height: 45px;
